@@ -274,7 +274,7 @@ nav button {
 }
 
 .secimg img{
-/*     display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center; */
     position: relative;
@@ -339,7 +339,6 @@ section.first > div :first-child{
 
 .enquire:hover{
     transition: transform 0.3s ease-in-out;
-    transform: scale(1.07);
     cursor: pointer;
     background-color: rgb(131, 195, 37);
 }
@@ -365,4 +364,60 @@ section.first > div :first-child{
     cursor: pointer;
     background-color: white;
     color: black;
+}
+
+/*Responsive*/
+@media (max-width: 1024px) {
+    .hero {
+        font-size: 1.3rem;
+    }
+    .hero > :first-child {
+        font-size: 2rem;
+    }
+    .movie5 img, .movie10 img {
+        width: 22vw;
+        padding: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .hero > :first-child {
+        font-size: 1.8rem;
+    }
+    .movie5, .movie10 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .movie5 img, .movie10 img {
+        width: 60vw;
+        padding: 2vw;
+    }
+    .btn, .btn-red-sm {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        font-size: 1rem;
+        padding: 0 4vw;
+    }
+    .hero > :first-child {
+        font-size: 1.5rem;
+    }
+    .movie5 img, .movie10 img {
+        width: 80vw;
+        padding: 1vw;
+    }
+    .btn, .btn-red-sm {
+        font-size: 0.8rem;
+    }
+    .enquire, .know {
+        width: 90%;
+        font-size: 1.5rem;
+    }
 }
